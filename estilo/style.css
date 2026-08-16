@@ -42,6 +42,8 @@ body{
 header{
     background-color: white;
     padding: 10px;
+    padding-right: 0;
+    padding-left: 0; 
     height: 60px;
     display: flex;
     gap: 200px ;
