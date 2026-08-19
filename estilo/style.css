@@ -2,6 +2,8 @@
 
 @import url("https://use.typekit.net/wau8dks.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +20,7 @@
     --cor5:#133024;
 
     --font-titulo:"adlam-display", sans-serif;
+    --font-destaque: "Playfair Display", serif;
     
 }
 
@@ -46,13 +49,21 @@ header{
     padding-left: 0; 
     height: 60px;
     display: flex;
-    gap: 200px ;
+    gap: 280px ;
 
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+header h1{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    font-family: var(--font-titulo);
+    
 }
 
 nav{
@@ -78,7 +89,7 @@ nav > a:hover{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);
 }
 
-#criarConta{
+#entrarConta{
     display: inline-block;
     padding: 15px;
     font-size: 1.2em;
@@ -92,16 +103,17 @@ nav > a:hover{
     color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397); 
 }
-#criarConta:hover{
-    transform: translate(-3px, -3px);
-    transition: 0.3s;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);    
+#entrarConta:hover{
+    background-color: #63c297;
+    color: #343A40;
+    transition: 0.6s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);   
 }
 
 .hero{
     background-image: linear-gradient(to bottom, var(--cor5), var(--cor2));
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 100px;
     margin-bottom: 60px;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 90%);
@@ -110,18 +122,19 @@ nav > a:hover{
 
 .hero h2{
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: var(--font-destaque);
 }
 .hero img{
     width: 700px;
     height: 400px;
-    border-radius: 10px;
+    border-radius: 15px 0px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.445);
     margin-bottom: 60px;
 }
 .hero h1{
     background-color: var(--cor0);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -130,18 +143,21 @@ nav > a:hover{
     display: flex;
     gap: 60px;
     margin: auto;
-    width: 80%;
+    width: 83%;
+}
+.container > div{
+    padding-top: 60px;
+}
+.container p {
+    color: white;
+    margin-top: 10px;
 }
 
 #logo{
     width: 60px;
     height: 60px;
-    margin-left: 10px;
+    margin-left: 20px;
     display: inline-block;
-}
-
-#bloco{
-    margin-top: 60px;
 }
 
 #nEmail{
@@ -153,18 +169,17 @@ nav > a:hover{
     border-radius: 6px;
 }
 
-#botao-entrar{
+#botao-criar{
     background-color: white;
     padding: 10px;
     width: 383px;
-    padding: 6px;
     display: inline-block;
     border-radius: 10px;
     margin-top: 40px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.438);
 }
 
-#botao-entrar button{
+#botao-criar button{
     background-color: var(--cor1);
     border-radius: 16px;
     padding: 13px;
@@ -173,19 +188,19 @@ nav > a:hover{
     font-weight: bold;
     color: white;
 }
-#botao-entrar button:hover{
+#botao-criar button:hover{
     background-color: #63c297;
     color: #343A40;
     transition: 0.6s;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397); 
 }
 
-#botao-criar{
+#botao-entrar{
     position: absolute;
     top: 10%;
     left: 60%;
 }
-#botao-criar > p{
+#botao-entrar > p{
     margin-right: 10px;
     margin-top: 10px;
     padding: 10px;
@@ -200,7 +215,7 @@ hr{
     margin: auto;
     border: 1px solid black;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 section#introducao{
@@ -232,4 +247,40 @@ section#introducao{
 #introducao h2{
     padding: 10px;
     font-size: 1.9em;
+}
+
+section#funcionamento{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: var(--cor1);
+}
+#funcionamento h1{
+    font-family: var(--font-titulo);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#funcionamento h2{
+    margin-bottom: 10px;
+    font-family: var(--font-titulo);
+}
+
+.card{
+    margin: 30px;
+    display: block;
+    width: 280px;
+    background-color: var(--cor0);
+    padding: 20px;
+    border-radius: 10px 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.493);
+}
+.bloco{
+    display: inline-block;
+    margin: auto;
+}
+
+
+footer{
+    padding: 10px;
+    text-align: center;
 }
