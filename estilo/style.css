@@ -292,19 +292,27 @@ section#financeiro{
     font-size: 2.6em;
     text-decoration: underline;
 }
-
-table{
-    border-collapse: collapse;
-    margin: auto;
-    width: 700px;
-    padding: 10px;
+#financeiro p{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 60px
+}
+table{
+    border-collapse:collapse ;
+    margin: auto;
+    width: 800px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
 }
 caption{
     margin: 10px;
     font-size: 1.3em;
     font-weight: bold;
+}
+thead{
+    background-color: var(--cor1);
+    color: white;
 }
 
 td, th{
